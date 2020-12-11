@@ -3,23 +3,21 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Hexo</title>
+    <title>Ada.h</title>
     
     
-        <meta name="keywords" content="Hexo" />
+        <meta name="keywords" content="Ada.h" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:title" content="Ada.h">
+<meta property="og:url" content="https://adahuangsx.github.io/index.html">
+<meta property="og:site_name" content="Ada.h">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="Ada Huang Sixuan">
+<meta property="article:author" content="Ada Huang">
 <meta name="twitter:card" content="summary">
     
 
-    
-        <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml" />
     
 
     
@@ -64,7 +62,8 @@
     
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     
-<meta name="generator" content="Hexo 5.2.0"></head>
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="Ada.h" type="application/atom+xml">
+</head>
 
 <body>
     <div id="container">
@@ -73,7 +72,7 @@
         <div class="outer">
             <a href="/" id="logo">
                 <i class="logo"></i>
-                <span class="site-title">Hexo</span>
+                <span class="site-title">Ada.h</span>
             </a>
             <nav id="main-nav">
                 
@@ -88,6 +87,16 @@
                     <a class="main-nav-link" href="/about">关于</a>
                 
             </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="https://www.gravatar.com/avatar/6a7183ae348f269c4686444633183d84" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
             
             <div id="search-form-wrap">
 
@@ -158,10 +167,165 @@
 
         <div class="outer">
             
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="https://www.gravatar.com/avatar/6a7183ae348f269c4686444633183d84?s=128" />
+            <h2 id="name">Ada Huang</h2>
+            <h3 id="title">University of Pittsburgh</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Pittsburgh, PA</span>
+            <a id="follow" target="_blank" href="https://github.com/adahuangsx/">FOLLOW</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                2
+                <span>posts</span>
+            </div>
+            <div class="article-info-block">
+                2
+                <span>tags</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/adahuangsx" target="_blank" title="github" >
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/null" target="_blank" title="stack-overflow" >
+                            <i class="fa fa-stack-overflow"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/null" target="_blank" title="codepen" >
+                            <i class="fa fa-codepen"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/null" target="_blank" title="rss" >
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
             
                 <aside id="sidebar">
    
         
+    <div class="widget-wrap" id='categories'>
+        <h3 class="widget-title">
+            <span>categories</span>
+            &nbsp;
+            <a id='allExpand' href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            算法复习
+                        </a>
+                         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Binary Search
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/12/10/test-blog-article/">Test Blog Title</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+                    </li> 
+                     <li class="file"><a href="/2020/12/10/hello-world/">Launch Hexo</a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
     
     <div id="toTop" class="fa fa-angle-up"></div>
 </aside>
@@ -175,7 +339,17 @@
                 
                     <div class="article-meta">
                         
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E7%AE%97%E6%B3%95%E5%A4%8D%E4%B9%A0/">算法复习</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/%E7%AE%97%E6%B3%95%E5%A4%8D%E4%B9%A0/Binary-Search/">Binary Search</a>
+    </div>
+
                         
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a>
+    </div>
+
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
@@ -191,13 +365,13 @@
                         
                         
                             <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/test-blog-article.md'> Source </a>
+                                <a target="_blank" rel="noopener" href='https://github.com/adahuangsx/adahuangsx.github.io/raw/master/source/_posts/test-blog-article.md'> Source </a>
                             </div>
                             <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/test-blog-article.md'> Edit </a>
+                                <a target="_blank" rel="noopener" href='https://github.com/adahuangsx/adahuangsx.github.io/edit/master/source/_posts/test-blog-article.md'> Edit </a>
                             </div>
                             <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/test-blog-article.md'> History </a>
+                                <a target="_blank" rel="noopener" href='https://github.com/adahuangsx/adahuangsx.github.io/commits/master/source/_posts/test-blog-article.md'> History </a>
                             </div>
                         
                     </div>
@@ -205,7 +379,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2020/12/10/test-blog-article/">test blog article</a>
+            <a class="article-title" href="/2020/12/10/test-blog-article/">Test Blog Title</a>
         </h1>
     
 
@@ -224,7 +398,7 @@
             
         
         
-            
+            <h3 id="This-is-text"><a href="#This-is-text" class="headerlink" title="This is text."></a>This is text.</h3>
             </div>
         
         <footer class="article-footer">
@@ -247,6 +421,11 @@
                     <div class="article-meta">
                         
                         
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Hexo/" rel="tag">Hexo</a>
+    </div>
+
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
@@ -262,13 +441,13 @@
                         
                         
                             <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/hello-world.md'> Source </a>
+                                <a target="_blank" rel="noopener" href='https://github.com/adahuangsx/adahuangsx.github.io/raw/master/source/_posts/hello-world.md'> Source </a>
                             </div>
                             <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/hello-world.md'> Edit </a>
+                                <a target="_blank" rel="noopener" href='https://github.com/adahuangsx/adahuangsx.github.io/edit/master/source/_posts/hello-world.md'> Edit </a>
                             </div>
                             <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/hello-world.md'> History </a>
+                                <a target="_blank" rel="noopener" href='https://github.com/adahuangsx/adahuangsx.github.io/commits/master/source/_posts/hello-world.md'> History </a>
                             </div>
                         
                     </div>
@@ -276,7 +455,7 @@
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2020/12/10/hello-world/">Hello World</a>
+            <a class="article-title" href="/2020/12/10/hello-world/">Launch Hexo</a>
         </h1>
     
 
@@ -337,7 +516,7 @@
         <footer id="footer">
     <div class="outer">
         <div id="footer-info" class="inner">
-            Ada Huang Sixuan &copy; 2020 
+            Ada Huang &copy; 2020 
             <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
             <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a target="_blank" rel="noopener" href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
             
