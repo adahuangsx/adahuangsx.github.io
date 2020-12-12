@@ -170,7 +170,7 @@ code {
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
-  background-image: url("/css/images/avatar.jpg");
+  background-image: url("https://img.icons8.com/cotton/64/fa314a/cup--v2.png");
   -webkit-background-size: 40px 40px;
   -moz-background-size: 40px 40px;
   background-size: 40px 40px;
@@ -2351,4 +2351,7 @@ ol.toc {
 .highlight .code .type,
 .highlight .code .selector-id {
   font-weight: bold;
+}
+#profile {
+  float: right;
 }

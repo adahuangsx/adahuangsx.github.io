@@ -46,6 +46,13 @@
 
   
   <url>
+    <loc>https://adahuangsx.github.io/tags/Hexo/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://adahuangsx.github.io/tags/Search-Engine/</loc>
     <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
@@ -61,13 +68,6 @@
   
   <url>
     <loc>https://adahuangsx.github.io/tags/Spring-MVC/</loc>
-    <lastmod>2020-12-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://adahuangsx.github.io/tags/Hexo/</loc>
     <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
