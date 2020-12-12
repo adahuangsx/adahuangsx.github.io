@@ -2,14 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://adahuangsx.github.io/2020/12/10/hello-world/</loc>
+    <loc>https://adahuangsx.github.io/2020/12/10/IS2140-IR-finalproject/</loc>
+    
+    <lastmod>2020-12-12</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://adahuangsx.github.io/categories/index.html</loc>
     
     <lastmod>2020-12-11</lastmod>
     
   </url>
   
   <url>
-    <loc>https://adahuangsx.github.io/2020/12/10/test-blog-article/</loc>
+    <loc>https://adahuangsx.github.io/2020/12/10/hello-world/</loc>
     
     <lastmod>2020-12-11</lastmod>
     
@@ -29,32 +36,39 @@
     
   </url>
   
-  <url>
-    <loc>https://adahuangsx.github.io/categories/index.html</loc>
-    
-    <lastmod>2020-12-10</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://adahuangsx.github.io/</loc>
-    <lastmod>2020-12-11</lastmod>
+    <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://adahuangsx.github.io/tags/Hexo/</loc>
-    <lastmod>2020-12-11</lastmod>
+    <loc>https://adahuangsx.github.io/tags/Search-Engine/</loc>
+    <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://adahuangsx.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2020-12-11</lastmod>
+    <loc>https://adahuangsx.github.io/tags/Java/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://adahuangsx.github.io/tags/Spring-MVC/</loc>
+    <lastmod>2020-12-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://adahuangsx.github.io/tags/Hexo/</loc>
+    <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -62,15 +76,8 @@
 
   
   <url>
-    <loc>https://adahuangsx.github.io/categories/%E7%AE%97%E6%B3%95%E5%A4%8D%E4%B9%A0/</loc>
-    <lastmod>2020-12-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://adahuangsx.github.io/categories/%E7%AE%97%E6%B3%95%E5%A4%8D%E4%B9%A0/Binary-Search/</loc>
-    <lastmod>2020-12-11</lastmod>
+    <loc>https://adahuangsx.github.io/categories/Projects/</loc>
+    <lastmod>2020-12-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
