@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://adahuangsx.github.io/2021/01/23/Why-Nand/</loc>
-    
-    <lastmod>2021-01-23</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://adahuangsx.github.io/2020/12/10/hello-world/</loc>
     
     <lastmod>2021-01-23</lastmod>
@@ -18,7 +11,14 @@
   <url>
     <loc>https://adahuangsx.github.io/2020/12/10/IS2140-IR-finalproject/</loc>
     
-    <lastmod>2020-12-12</lastmod>
+    <lastmod>2021-01-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://adahuangsx.github.io/2021/01/23/Why-Nand/</loc>
+    
+    <lastmod>2021-01-23</lastmod>
     
   </url>
   
