@@ -6,7 +6,7 @@
   <link href="https://adahuangsx.github.io/atom.xml" rel="self"/>
   
   <link href="https://adahuangsx.github.io/"/>
-  <updated>2021-01-23T19:41:45.296Z</updated>
+  <updated>2021-01-24T03:48:16.359Z</updated>
   <id>https://adahuangsx.github.io/</id>
   
   <author>
@@ -17,18 +17,50 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hardware simulator</title>
+    <link href="https://adahuangsx.github.io/2021/01/23/hardware-simulator/"/>
+    <id>https://adahuangsx.github.io/2021/01/23/hardware-simulator/</id>
+    <published>2021-01-24T03:15:40.000Z</published>
+    <updated>2021-01-24T03:48:16.359Z</updated>
+    
+    <content type="html"><![CDATA[<p>这两个单元主要是介绍了软件怎么用，怎么test和生成output。<br>简介了Hardware Description Language (HDL) (unit 1.4)</p><h2 id="Hardware-simulator-unit-1-5"><a href="#Hardware-simulator-unit-1-5" class="headerlink" title="Hardware simulator (unit 1.5)"></a>Hardware simulator (unit 1.5)</h2><h3 id="Feel-free-to-“kick-the-tires”"><a href="#Feel-free-to-“kick-the-tires”" class="headerlink" title="Feel free to “kick the tires”!"></a>Feel free to “kick the tires”!</h3><ul><li>The simulator is written in Java.</li><li>The download link is <a href="https://www.nand2tetris.org/software">here</a>.</li><li>The simulator is invoking in <code>nand2tetris/tools/HardwareSimulator.bat</code>.</li><li>It can check both output pins and internal pins.</li></ul><h3 id="Script-based-simulation"><a href="#Script-based-simulation" class="headerlink" title="Script-based simulation"></a>Script-based simulation</h3><p>HDL code <code>.hdl</code> + test script  <code>tst</code> —–&gt; into simulator —–&gt; Output file <code>.out</code></p><p><strong>Note that</strong> this way to debug by checking the output file is rare in real life testing, because a real chip is far more complex than an Xor chip. A more systematic and planned method is going to be introduced next.</p><h3 id="Script-based-simulation-with-compare-files"><a href="#Script-based-simulation-with-compare-files" class="headerlink" title="Script-based simulation with compare files"></a>Script-based simulation with compare files</h3><p>The compare file <code>.cmp</code>, whose previous incarnation (前身) is a correct output file.</p><hr><h2 id="Hardware-Construction-Projects"><a href="#Hardware-Construction-Projects" class="headerlink" title="Hardware Construction Projects"></a>Hardware Construction Projects</h2><ul><li><h3 id="System-architects"><a href="#System-architects" class="headerlink" title="System architects"></a>System architects</h3><ul><li>chip API</li><li>test script</li><li>compare file</li></ul></li><li><h3 id="Developers"><a href="#Developers" class="headerlink" title="Developers"></a>Developers</h3><ul><li>build the chip with HDL</li></ul></li></ul><p><strong>In this course, we play the role of developers.</strong></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这两个单元主要是介绍了软件怎么用，怎么test和生成output。&lt;br&gt;简介了Hardware Description Language (HDL) (unit 1.4)&lt;/p&gt;
+&lt;h2 id=&quot;Hardware-simulator-unit-1-5&quot;&gt;&lt;a href=&quot;</summary>
+      
+    
+    
+    
+    <category term="Coursera" scheme="https://adahuangsx.github.io/categories/Coursera/"/>
+    
+    <category term="Nand2Tetris" scheme="https://adahuangsx.github.io/categories/Coursera/Nand2Tetris/"/>
+    
+    
+    <category term="Notes" scheme="https://adahuangsx.github.io/tags/Notes/"/>
+    
+    <category term="Coursera" scheme="https://adahuangsx.github.io/tags/Coursera/"/>
+    
+    <category term="Nand2Tetris" scheme="https://adahuangsx.github.io/tags/Nand2Tetris/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Why Nand? -- starting Nand2Tetris part I</title>
     <link href="https://adahuangsx.github.io/2021/01/23/Why-Nand/"/>
     <id>https://adahuangsx.github.io/2021/01/23/Why-Nand/</id>
     <published>2021-01-23T18:25:32.000Z</published>
-    <updated>2021-01-23T19:41:45.296Z</updated>
+    <updated>2021-01-24T03:57:12.456Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Boolean-logic-unit-1-1-–-1-3"><a href="#Boolean-logic-unit-1-1-–-1-3" class="headerlink" title="Boolean logic (unit 1.1 – 1.3)"></a>Boolean logic (unit 1.1 – 1.3)</h1><h2 id="Algebra-rules"><a href="#Algebra-rules" class="headerlink" title="Algebra rules"></a>Algebra rules</h2><ul><li><p>Commutative laws</p><ul><li>x AND y == y AND x</li><li>x OR y == y OR x</li></ul></li><li><p>Associative laws</p><ul><li>x AND (y AND z) == (x AND y) AND z</li><li>x OR (y OR z) == (x OR y) OR z</li></ul></li><li><p>Distributive laws</p><ul><li>x <strong>AND</strong> (y OR z) == (x AND y) OR (x AND z)</li><li>x <strong>OR</strong> (y AND z) == (x OR y) AND (x OR z)</li></ul></li><li><p>De Morgan laws</p><ul><li>NOT (x AND y) == NOT (x) OR NOT (y)</li><li>NOT (x OR y) == NOT (x) AND NOT (y)</li></ul></li><li><p>Other rules</p><ul><li>x AND x == x</li><li>x OR x == x</li></ul></li></ul><h2 id="Truth-table-to-Boolean-Expression"><a href="#Truth-table-to-Boolean-Expression" class="headerlink" title="Truth table to Boolean Expression"></a>Truth table to Boolean Expression</h2><ol><li><p>Focus all the “1” results</p></li><li><p>write down all the expressions which only apply to the single rows in the truth table</p></li><li><p>OR these expressions together</p><p><img src="/images/Nand2Tetris/table2expression.png" alt="Truth table to Boolean Expression"></p></li><li><p>Simplify it.</p><p>In the example above, give a close look at the first two clauses: we have both possibilities for “y” and the same fixed value for “x”. So, we can combine the two clauses, which does not ask about y and only ask about “NOT(x)” and “NOT(z)”.</p><p>Then keep doing this.</p><p><img src="/images/Nand2Tetris/simplify%20expression.png" alt="Simplify it"></p><p><strong>Note that</strong> finding the shortest expressions is not easy for humans nor for algorithms, because this is a NP-hard problem.</p></li></ol><h2 id="Theorem"><a href="#Theorem" class="headerlink" title="Theorem"></a>Theorem</h2><p>Any Boolean function can be represented using an expression only containing AND and NOT operations.</p><p>Then, we introduce the NAND gate, which is proved to be the <strong>only needed gates</strong>.</p><h3 id="NAND-function"><a href="#NAND-function" class="headerlink" title="NAND function"></a>NAND function</h3><p>x NAND y == NOT (x AND y)</p><p><u><em>“NAND” is short for “NOT AND”.</em></u></p><h3 id="Proof"><a href="#Proof" class="headerlink" title="Proof"></a>Proof</h3><ol><li>NOT (x) == x NAND x</li><li>x AND y == NOT (x NAND y)</li></ol><p>The gate interface in unique. There is only one way to describe its functionality. Meantime, there are multiple implementations that realize the same obstruction. This duality of <strong>“one obstruction, many different implementations”</strong> is very typical in Computer Science.</p><p>所以这里解答了我对计算机的一个疑问，那就是不必纠结一个复杂的功能最底层到底是怎么实现的，而是像这门课一样，分层地理解。了解了一层以后，就把这层的知识作为已知，再去了解上面一层。</p><h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><blockquote><ul><li><a href="https://www.nand2tetris.org/">Nand2Tetris home page</a></li><li><a href="https://www.coursera.org/learn/build-a-computer">Nand2Tetris Coursera link</a></li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<p>这一章除了复习了一遍以前学过的与非或逻辑门，还介绍了为什么一个<strong>与非门</strong>就能表示所有的逻辑表达式。</p><h1 id="Boolean-logic-unit-1-1-–-1-3"><a href="#Boolean-logic-unit-1-1-–-1-3" class="headerlink" title="Boolean logic (unit 1.1 – 1.3)"></a>Boolean logic (unit 1.1 – 1.3)</h1><h2 id="Algebra-rules"><a href="#Algebra-rules" class="headerlink" title="Algebra rules"></a>Algebra rules</h2><ul><li><p>Commutative laws</p><ul><li>x AND y == y AND x</li><li>x OR y == y OR x</li></ul></li><li><p>Associative laws</p><ul><li>x AND (y AND z) == (x AND y) AND z</li><li>x OR (y OR z) == (x OR y) OR z</li></ul></li><li><p>Distributive laws</p><ul><li>x <strong>AND</strong> (y OR z) == (x AND y) OR (x AND z)</li><li>x <strong>OR</strong> (y AND z) == (x OR y) AND (x OR z)</li></ul></li><li><p>De Morgan laws</p><ul><li>NOT (x AND y) == NOT (x) OR NOT (y)</li><li>NOT (x OR y) == NOT (x) AND NOT (y)</li></ul></li><li><p>Other rules</p><ul><li>x AND x == x</li><li>x OR x == x</li></ul></li></ul><h2 id="Truth-table-to-Boolean-Expression"><a href="#Truth-table-to-Boolean-Expression" class="headerlink" title="Truth table to Boolean Expression"></a>Truth table to Boolean Expression</h2><ol><li><p><strong>Focus all the “1” results</strong></p></li><li><p><strong>write down all the expressions which only apply to the single rows in the truth table</strong></p></li><li><p><strong>OR these expressions together</strong></p><p><img src="/images/Nand2Tetris/table2expression.png" alt="Truth table to Boolean Expression"></p></li><li><p><strong>Simplify it.</strong></p><p>In the example above, give a close look at the first two clauses: we have both possibilities for “y” and the same fixed value for “x”. So, we can combine the two clauses, which does not ask about y and only ask about “NOT(x)” and “NOT(z)”.</p><p>Then keep doing this.</p><p><img src="/images/Nand2Tetris/simplify%20expression.png" alt="Simplify it"></p><p><strong>Note that</strong> finding the shortest expressions is not easy for humans nor for algorithms, because this is a NP-hard problem.</p></li></ol><hr><h2 id="To-prove-Why-Nand"><a href="#To-prove-Why-Nand" class="headerlink" title="To prove Why-Nand"></a>To prove Why-Nand</h2><h3 id="The-Theorem"><a href="#The-Theorem" class="headerlink" title="The Theorem"></a>The Theorem</h3><p>Any Boolean function can be represented using an expression only containing AND and NOT operations.</p><p>Then, we introduce the NAND gate, which is proved to be the <strong>only needed gates</strong>.</p><h3 id="Here-comes-the-Nand"><a href="#Here-comes-the-Nand" class="headerlink" title="Here comes the Nand"></a>Here comes the Nand</h3><p>x NAND y == NOT (x AND y)</p><p><u><em>“NAND” is short for “NOT AND”.</em></u></p><h3 id="Nand-takes-over"><a href="#Nand-takes-over" class="headerlink" title="Nand takes over."></a>Nand takes over.</h3><ol><li>NOT (x) == x NAND x</li><li>x AND y == NOT (x NAND y)</li></ol><hr><p>The gate interface in unique. There is only one way to describe its functionality. Meantime, there are multiple implementations that realize the same obstruction. This duality of <strong>“one obstruction, many different implementations”</strong> is very typical in Computer Science.</p><p>所以这里解答了我对计算机的一个疑问，那就是不必纠结一个复杂的功能最底层到底是怎么实现的，而是像这门课一样，分层地理解。了解了一层以后，就把这层的知识作为已知，再去了解上面一层。</p><h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><blockquote><ul><li><a href="https://www.nand2tetris.org/">Nand2Tetris home page</a></li><li><a href="https://www.coursera.org/learn/build-a-computer">Nand2Tetris Coursera link</a></li></ul></blockquote>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;Boolean-logic-unit-1-1-–-1-3&quot;&gt;&lt;a href=&quot;#Boolean-logic-unit-1-1-–-1-3&quot; class=&quot;headerlink&quot; title=&quot;Boolean logic (unit 1.1 – 1.3)&quot;&gt;&lt;/a&gt;</summary>
+    <summary type="html">&lt;p&gt;这一章除了复习了一遍以前学过的与非或逻辑门，还介绍了为什么一个&lt;strong&gt;与非门&lt;/strong&gt;就能表示所有的逻辑表达式。&lt;/p&gt;
+&lt;h1 id=&quot;Boolean-logic-unit-1-1-–-1-3&quot;&gt;&lt;a href=&quot;#Boolean-logic-unit-1</summary>
       
     
     
